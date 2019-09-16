@@ -765,6 +765,105 @@
         "name": "material\\run\\crusader_run_10016.png",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "material/MonkeyGamePlatform/Monkey/Idle/Idle1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "material\\MonkeyGamePlatform\\Monkey\\Idle\\Idle1.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "material/MonkeyGamePlatform/Monkey/Idle/Idle2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "material\\MonkeyGamePlatform\\Monkey\\Idle\\Idle2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "material/MonkeyGamePlatform/Monkey/Idle/Idle3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "material\\MonkeyGamePlatform\\Monkey\\Idle\\Idle3.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "material/MonkeyGamePlatform/Monkey/Run/Run1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "material\\MonkeyGamePlatform\\Monkey\\Run\\Run1.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "material/MonkeyGamePlatform/Monkey/Run/Run2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "material\\MonkeyGamePlatform\\Monkey\\Run\\Run2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "material/MonkeyGamePlatform/Monkey/Run/Run3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "material\\MonkeyGamePlatform\\Monkey\\Run\\Run3.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "material/MonkeyGamePlatform/Monkey/Run/Run4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "material\\MonkeyGamePlatform\\Monkey\\Run\\Run4.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "material/MonkeyGamePlatform/Monkey/Run/Run5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "material\\MonkeyGamePlatform\\Monkey\\Run\\Run5.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "material/MonkeyGamePlatform/Monkey/Run/Run6.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "material\\MonkeyGamePlatform\\Monkey\\Run\\Run6.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "material/MonkeyGamePlatform/Monkey/Run/Run7.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "material\\MonkeyGamePlatform\\Monkey\\Run\\Run7.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "material/MonkeyGamePlatform/FloatingIslands/BigIsland.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "material\\MonkeyGamePlatform\\FloatingIslands\\BigIsland.png",
+        "smoothed": true,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -5438,7 +5537,7 @@
                 "value": "ChangeAnimation"
               },
               "parameters": [
-                "Player",
+                "man",
                 "=",
                 "1"
               ],
@@ -5471,7 +5570,7 @@
                 "value": "ChangeAnimation"
               },
               "parameters": [
-                "Player",
+                "man",
                 "=",
                 "1"
               ],
@@ -5523,7 +5622,7 @@
                     "value": "ChangeAnimation"
                   },
                   "parameters": [
-                    "Player",
+                    "man",
                     "=",
                     "0"
                   ],
@@ -5556,7 +5655,7 @@
                     "value": "ChangeAnimation"
                   },
                   "parameters": [
-                    "Player",
+                    "man",
                     "=",
                     "2"
                   ],
@@ -5591,7 +5690,7 @@
                 "value": "FlipX"
               },
               "parameters": [
-                "Player",
+                "man",
                 "yes"
               ],
               "subInstructions": []
@@ -5623,7 +5722,7 @@
                 "value": "FlipX"
               },
               "parameters": [
-                "Player",
+                "man",
                 "no"
               ],
               "subInstructions": []
@@ -6104,6 +6203,1609 @@
           "name": "Anchor",
           "type": "AnchorBehavior::AnchorBehavior"
         },
+        {
+          "name": "Platform",
+          "type": "PlatformBehavior::PlatformBehavior"
+        },
+        {
+          "name": "PlatformerObject",
+          "type": "PlatformBehavior::PlatformerObjectBehavior"
+        }
+      ]
+    },
+    {
+      "b": 209,
+      "disableInputWhenNotFocused": true,
+      "mangledName": "test",
+      "name": "test",
+      "oglFOV": 90,
+      "oglZFar": 500,
+      "oglZNear": 1,
+      "r": 209,
+      "standardSortMethod": true,
+      "stopSoundsOnStartup": true,
+      "title": "",
+      "v": 209,
+      "uiSettings": {
+        "grid": false,
+        "gridB": 255,
+        "gridG": 180,
+        "gridHeight": 32,
+        "gridOffsetX": 0,
+        "gridOffsetY": 0,
+        "gridR": 158,
+        "gridWidth": 32,
+        "snap": true,
+        "windowMask": false,
+        "zoomFactor": 1
+      },
+      "objectsGroups": [],
+      "variables": [],
+      "instances": [
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 18,
+          "layer": "",
+          "locked": false,
+          "name": "monkey",
+          "width": 18,
+          "x": 280,
+          "y": 475,
+          "zOrder": 10,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "NewObject",
+          "width": 0,
+          "x": 466,
+          "y": 504,
+          "zOrder": 2,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "NewObject",
+          "width": 0,
+          "x": 139,
+          "y": 516,
+          "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "NewObject",
+          "width": 0,
+          "x": -181,
+          "y": 480,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "NewObject",
+          "width": 0,
+          "x": 26,
+          "y": 235,
+          "zOrder": 5,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 101,
+          "layer": "",
+          "locked": false,
+          "name": "latter",
+          "width": 72,
+          "x": 629,
+          "y": 287,
+          "zOrder": 5,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "latter",
+          "width": 0,
+          "x": 627,
+          "y": 191,
+          "zOrder": 5,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "latter",
+          "width": 0,
+          "x": 626,
+          "y": 93,
+          "zOrder": 5,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "latter",
+          "width": 0,
+          "x": 625,
+          "y": 10,
+          "zOrder": 5,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "latter",
+          "width": 0,
+          "x": 550,
+          "y": 9,
+          "zOrder": 5,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "latter",
+          "width": 0,
+          "x": 631,
+          "y": 377,
+          "zOrder": 5,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "latter",
+          "width": 0,
+          "x": 634,
+          "y": 466,
+          "zOrder": 5,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 23,
+          "layer": "",
+          "locked": false,
+          "name": "latter",
+          "width": 18,
+          "x": 399,
+          "y": 508,
+          "zOrder": 5,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 23,
+          "layer": "",
+          "locked": false,
+          "name": "latter",
+          "width": 18,
+          "x": 397,
+          "y": 481,
+          "zOrder": 5,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 23,
+          "layer": "",
+          "locked": false,
+          "name": "latter",
+          "width": 18,
+          "x": 398,
+          "y": 455,
+          "zOrder": 5,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 23,
+          "layer": "",
+          "locked": false,
+          "name": "latter",
+          "width": 18,
+          "x": 399,
+          "y": 434,
+          "zOrder": 5,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 23,
+          "layer": "",
+          "locked": false,
+          "name": "latter",
+          "width": 18,
+          "x": 399,
+          "y": 409,
+          "zOrder": 5,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 23,
+          "layer": "",
+          "locked": false,
+          "name": "latter",
+          "width": 18,
+          "x": 399,
+          "y": 385,
+          "zOrder": 5,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "latter",
+          "width": 0,
+          "x": 442,
+          "y": 3,
+          "zOrder": 18,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "latter",
+          "width": 0,
+          "x": 442,
+          "y": 3,
+          "zOrder": 18,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        }
+      ],
+      "objects": [
+        {
+          "name": "monkey",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "behaviors": [
+            {
+              "acceleration": 1500,
+              "canGrabPlatforms": false,
+              "deceleration": 1500,
+              "gravity": 1000,
+              "ignoreDefaultControls": false,
+              "jumpSpeed": 1000,
+              "maxFallingSpeed": 500,
+              "maxSpeed": 2500,
+              "name": "PlatformerObject",
+              "roundCoordinates": true,
+              "slopeMaxAngle": 60,
+              "type": "PlatformBehavior::PlatformerObjectBehavior",
+              "xGrabTolerance": 10,
+              "yGrabOffset": 0
+            }
+          ],
+          "animations": [
+            {
+              "name": "idle",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": true,
+                  "timeBetweenFrames": 0.01,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "material\\MonkeyGamePlatform\\Monkey\\Idle\\Idle1.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 112.5,
+                            "y": 53
+                          },
+                          {
+                            "x": 160.5,
+                            "y": 54
+                          },
+                          {
+                            "x": 143.5,
+                            "y": 214
+                          },
+                          {
+                            "x": 105.5,
+                            "y": 211
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "material\\MonkeyGamePlatform\\Monkey\\Idle\\Idle2.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 112.5,
+                            "y": 53
+                          },
+                          {
+                            "x": 160.5,
+                            "y": 54
+                          },
+                          {
+                            "x": 143.5,
+                            "y": 214
+                          },
+                          {
+                            "x": 105.5,
+                            "y": 211
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "material\\MonkeyGamePlatform\\Monkey\\Idle\\Idle3.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 112.5,
+                            "y": 53
+                          },
+                          {
+                            "x": 160.5,
+                            "y": 54
+                          },
+                          {
+                            "x": 143.5,
+                            "y": 214
+                          },
+                          {
+                            "x": 105.5,
+                            "y": 211
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "jump",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": true,
+                  "timeBetweenFrames": 0.01,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "material\\MonkeyGamePlatform\\Monkey\\Jump\\Jump1.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 112.5,
+                            "y": 53
+                          },
+                          {
+                            "x": 160.5,
+                            "y": 54
+                          },
+                          {
+                            "x": 143.5,
+                            "y": 214
+                          },
+                          {
+                            "x": 105.5,
+                            "y": 211
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "material\\MonkeyGamePlatform\\Monkey\\Jump\\Jump2.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 112.5,
+                            "y": 53
+                          },
+                          {
+                            "x": 160.5,
+                            "y": 54
+                          },
+                          {
+                            "x": 143.5,
+                            "y": 214
+                          },
+                          {
+                            "x": 105.5,
+                            "y": 211
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "material\\MonkeyGamePlatform\\Monkey\\Jump\\Jump3.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 112.5,
+                            "y": 53
+                          },
+                          {
+                            "x": 160.5,
+                            "y": 54
+                          },
+                          {
+                            "x": 143.5,
+                            "y": 214
+                          },
+                          {
+                            "x": 105.5,
+                            "y": 211
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "material\\MonkeyGamePlatform\\Monkey\\Jump\\Jump4.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 112.5,
+                            "y": 53
+                          },
+                          {
+                            "x": 160.5,
+                            "y": 54
+                          },
+                          {
+                            "x": 143.5,
+                            "y": 214
+                          },
+                          {
+                            "x": 105.5,
+                            "y": 211
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "material\\MonkeyGamePlatform\\Monkey\\Jump\\Jump5.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 112.5,
+                            "y": 53
+                          },
+                          {
+                            "x": 160.5,
+                            "y": 54
+                          },
+                          {
+                            "x": 143.5,
+                            "y": 214
+                          },
+                          {
+                            "x": 105.5,
+                            "y": 211
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "material\\MonkeyGamePlatform\\Monkey\\Jump\\Jump6.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 112.5,
+                            "y": 53
+                          },
+                          {
+                            "x": 160.5,
+                            "y": 54
+                          },
+                          {
+                            "x": 143.5,
+                            "y": 214
+                          },
+                          {
+                            "x": 105.5,
+                            "y": 211
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "material\\MonkeyGamePlatform\\Monkey\\Jump\\Jump7.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 112.5,
+                            "y": 53
+                          },
+                          {
+                            "x": 160.5,
+                            "y": 54
+                          },
+                          {
+                            "x": 143.5,
+                            "y": 214
+                          },
+                          {
+                            "x": 105.5,
+                            "y": 211
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "run",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": true,
+                  "timeBetweenFrames": 0.01,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "material\\MonkeyGamePlatform\\Monkey\\Run\\Run1.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 112.5,
+                            "y": 53
+                          },
+                          {
+                            "x": 160.5,
+                            "y": 54
+                          },
+                          {
+                            "x": 143.5,
+                            "y": 214
+                          },
+                          {
+                            "x": 105.5,
+                            "y": 211
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "material\\MonkeyGamePlatform\\Monkey\\Run\\Run2.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 112.5,
+                            "y": 53
+                          },
+                          {
+                            "x": 160.5,
+                            "y": 54
+                          },
+                          {
+                            "x": 143.5,
+                            "y": 214
+                          },
+                          {
+                            "x": 105.5,
+                            "y": 211
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "material\\MonkeyGamePlatform\\Monkey\\Run\\Run3.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 112.5,
+                            "y": 53
+                          },
+                          {
+                            "x": 160.5,
+                            "y": 54
+                          },
+                          {
+                            "x": 143.5,
+                            "y": 214
+                          },
+                          {
+                            "x": 105.5,
+                            "y": 211
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "material\\MonkeyGamePlatform\\Monkey\\Run\\Run4.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 112.5,
+                            "y": 53
+                          },
+                          {
+                            "x": 160.5,
+                            "y": 54
+                          },
+                          {
+                            "x": 143.5,
+                            "y": 214
+                          },
+                          {
+                            "x": 105.5,
+                            "y": 211
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "material\\MonkeyGamePlatform\\Monkey\\Run\\Run5.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 112.5,
+                            "y": 53
+                          },
+                          {
+                            "x": 160.5,
+                            "y": 54
+                          },
+                          {
+                            "x": 143.5,
+                            "y": 214
+                          },
+                          {
+                            "x": 105.5,
+                            "y": 211
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "material\\MonkeyGamePlatform\\Monkey\\Run\\Run6.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 112.5,
+                            "y": 53
+                          },
+                          {
+                            "x": 160.5,
+                            "y": 54
+                          },
+                          {
+                            "x": 143.5,
+                            "y": 214
+                          },
+                          {
+                            "x": 105.5,
+                            "y": 211
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "material\\MonkeyGamePlatform\\Monkey\\Run\\Run7.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 112.5,
+                            "y": 53
+                          },
+                          {
+                            "x": 160.5,
+                            "y": 54
+                          },
+                          {
+                            "x": 143.5,
+                            "y": 214
+                          },
+                          {
+                            "x": 105.5,
+                            "y": 211
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "NewObject",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "behaviors": [
+            {
+              "canBeGrabbed": true,
+              "name": "Platform",
+              "platformType": "NormalPlatform",
+              "type": "PlatformBehavior::PlatformBehavior",
+              "yGrabOffset": 0
+            }
+          ],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "material\\MonkeyGamePlatform\\FloatingIslands\\BigIsland.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 10.5,
+                            "y": 19
+                          },
+                          {
+                            "x": 344.5,
+                            "y": 15
+                          },
+                          {
+                            "x": 191,
+                            "y": 99
+                          },
+                          {
+                            "x": 159,
+                            "y": 99
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "latter",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "behaviors": [
+            {
+              "canBeGrabbed": true,
+              "name": "Platform",
+              "platformType": "Ladder",
+              "type": "PlatformBehavior::PlatformBehavior",
+              "yGrabOffset": 0
+            }
+          ],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": true,
+                  "timeBetweenFrames": 0.05,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "p1_jump.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "p1_stand.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "p1_walk01.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "p1_walk02.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "p1_walk03.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "p1_walk04.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "p1_walk05.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "p1_walk06.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "p1_walk07.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "p1_walk08.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "p1_walk09.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "p1_walk10.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "p1_walk11.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "events": [
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "PlatformBehavior::IsJumping"
+              },
+              "parameters": [
+                "monkey",
+                "PlatformerObject"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "SetAnimationName"
+              },
+              "parameters": [
+                "monkey",
+                "\"jump\""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "KeyPressed"
+                  },
+                  "parameters": [
+                    "",
+                    "Left"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "FlipX"
+                  },
+                  "parameters": [
+                    "monkey",
+                    "yes"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "KeyPressed"
+                  },
+                  "parameters": [
+                    "",
+                    "Right"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "FlipX"
+                  },
+                  "parameters": [
+                    "monkey",
+                    "no"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            }
+          ]
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "PlatformBehavior::IsOnFloor"
+              },
+              "parameters": [
+                "monkey",
+                "PlatformerObject"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [],
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "PlatformBehavior::IsMoving"
+                  },
+                  "parameters": [
+                    "monkey",
+                    "PlatformerObject"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SetAnimationName"
+                  },
+                  "parameters": [
+                    "monkey",
+                    "\"idle\""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "PlatformBehavior::IsMoving"
+                  },
+                  "parameters": [
+                    "monkey",
+                    "PlatformerObject"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SetAnimationName"
+                  },
+                  "parameters": [
+                    "monkey",
+                    "\"run\""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "KeyPressed"
+                      },
+                      "parameters": [
+                        "",
+                        "Left"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "FlipX"
+                      },
+                      "parameters": [
+                        "monkey",
+                        "yes"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "KeyPressed"
+                      },
+                      "parameters": [
+                        "",
+                        "Right"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "FlipX"
+                      },
+                      "parameters": [
+                        "monkey",
+                        "no"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "layers": [
+        {
+          "name": "",
+          "visibility": true,
+          "cameras": [
+            {
+              "defaultSize": true,
+              "defaultViewport": true,
+              "height": 0,
+              "viewportBottom": 1,
+              "viewportLeft": 0,
+              "viewportRight": 1,
+              "viewportTop": 0,
+              "width": 0
+            }
+          ],
+          "effects": []
+        }
+      ],
+      "behaviorsSharedData": [
         {
           "name": "Platform",
           "type": "PlatformBehavior::PlatformBehavior"
@@ -6856,6 +8558,12 @@
           "events": []
         }
       ]
+    },
+    {
+      "associatedLayout": "test",
+      "lastChangeTimeStamp": 0,
+      "name": "NewExternalEvents",
+      "events": []
     }
   ],
   "eventsFunctionsExtensions": [],
